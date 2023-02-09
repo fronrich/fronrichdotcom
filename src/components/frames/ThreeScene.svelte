@@ -1,5 +1,5 @@
 <script>
-  import { fade, fly } from "svelte/transition";
+  import { fade } from "svelte/transition";
   import * as SC from "svelte-cubed";
   export let position = [0, 0, 3];
 
