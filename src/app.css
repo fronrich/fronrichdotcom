@@ -1,0 +1,22 @@
+:root {
+  font-family: 'Ubuntu Mono', monospace;
+  line-height: 2em;
+  letter-spacing: 0.5em;
+  text-indent: 0.5em;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+
+  /* fallback */
+  background-color: #FFEA94;
+  color: #807755;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
