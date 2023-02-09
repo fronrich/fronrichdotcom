@@ -27,8 +27,8 @@
   import BehanceLogo from "phosphor-svelte/lib/BehanceLogo";
   import GithubLogo from "phosphor-svelte/lib/GithubLogo";
   import SpotifyLogo from "phosphor-svelte/lib/SpotifyLogo";
-  import Envelope from "phosphor-svelte/lib/Envelope";
   import LinkedinLogo from "phosphor-svelte/lib/LinkedinLogo";
+  import Envelope from "phosphor-svelte/lib/Envelope";
 
   const { color } = getContext("Theme");
 </script>
@@ -36,12 +36,12 @@
 <section>
   <Background>
     <ThreeScene position={[0, 0, 7]}>
-      <ThreeFlurry petalCount={10} spawnWidth={8} />
+      <ThreeFlurry petalCount={5} spawnWidth={5} />
     </ThreeScene>
   </Background>
   <Background>
     <ThreeScene position={[0, 0, 4]}>
-      <ThreeFlurry petalCount={10} spawnWidth={5} />
+      <ThreeFlurry petalCount={5} spawnWidth={4} />
     </ThreeScene>
   </Background>
   <Page>
@@ -57,11 +57,33 @@
             <h1>fronrich.p</h1>
           </Pool>
           <Row>
-            <Button>Design</Button>
-            |
-            <Button>Engineering</Button>
-            |
-            <Button>Art</Button>
+            <Button>
+              <a
+                href="https://dribbble.com/piing_at_iza"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Design
+              </a>
+            </Button>
+            <Button>
+              <a
+                href="https://github.com/fronrich"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Engineering
+              </a>
+            </Button>
+            <Button>
+              <a
+                href="https://dribbble.com/piing_at_iza"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Art
+              </a>
+            </Button>
           </Row>
         </Layer>
       </View>
@@ -119,14 +141,8 @@
           bottom={250}
         >
           <div class="Contact" style:background={color.background}>
-            <h2>
-              Lets get to work!
-              <br /><br />
-              <LinkedinLogo /> Fronrich Puno
-              <br /><br />
-              <Envelope /> iza.design.consulting@gmail.com
-            </h2>
-            <h1 style:background={color.background}>
+            <h2>Lets get to work!</h2>
+            <h1 class="Links" style:background={color.background}>
               <a
                 href="https://dribbble.com/piing_at_iza"
                 target="_blank"
@@ -155,6 +171,20 @@
               >
                 <SpotifyLogo weight="thin" />
               </a>
+              <a
+                href="https://www.linkedin.com/in/fronrich-puno/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedinLogo weight="thin" />
+              </a>
+              <a
+                href="mailto:iza.design.consulting@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Envelope weight="thin" />
+              </a>
             </h1>
           </div>
         </Saos>
@@ -167,12 +197,3 @@
     </ThreeScene>
   </Background>
 </section>
-
-<style>
-  .Contact {
-    margin: 20px;
-    padding: 40px;
-    border-radius: 2em;
-    box-shadow: 0px 8px 20px #00000030;
-  }
-</style>

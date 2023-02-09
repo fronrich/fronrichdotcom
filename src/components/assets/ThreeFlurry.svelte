@@ -15,7 +15,7 @@
     let list = [];
     for (let i = 0; i < petalCount; i++) {
       const SPAWN_LIMIT_X = spawnWidth;
-      const SPAWN_LIMIT_Y = 3;
+      const SPAWN_LIMIT_Y = 1;
       // scale determines the areodynamics of the petals
       const SCALE_LIMIT = 0.1;
 

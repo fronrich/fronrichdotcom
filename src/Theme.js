@@ -10,13 +10,21 @@ const Theme = {
   // standardizations
   standard: {
     // to make UI seamless, 'unit' is the base unit for sizing and spacing
-    unit: "16px"
+    unit: "1em",
+
+    // media queries are calculated by screen width
+    media: {
+      tablet: '1000px',
+      mobile: '700px'
+    }
   },
   color: colorsLight,
   font: {
     size: {
-      title: "8em",
-      paragraph: "1em",
+      titleDesktop: "4em",
+      paragraphDesktop: "1em",
+      titleMobile: "2em",
+      paragraphMobile: "0.75em"
     }
   }
 }

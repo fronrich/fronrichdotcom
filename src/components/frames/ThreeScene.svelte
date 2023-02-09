@@ -1,4 +1,5 @@
 <script>
+  import { fade, fly } from "svelte/transition";
   import * as SC from "svelte-cubed";
   export let position = [0, 0, 3];
 
@@ -6,7 +7,7 @@
   export let height = window.innerHeight;
 </script>
 
-<section>
+<section in:fade={{ duration: 10000, delay: 2000 }}>
   <SC.Canvas
     alpha={true}
     precision="lowp"

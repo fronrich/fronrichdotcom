@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# buld the project
+yarn run build
+
+# build the image
+docker build -t gcr.io/fronrichdotcom/fdc .
+
+# push the image to container registry
+docker push gcr.io/fronrichdotcom/fdc
